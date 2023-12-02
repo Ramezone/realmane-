@@ -21,11 +21,11 @@ client.on('message', async (message) => {
       
       const htmlLinks = urls.map((url) => `<a href="${url}">Click me For New Con</a>`).join('<br>');
       
-      fs.appendFile('index.html', `<p>[${message.author.tag}] ${htmlLinks}</p>\n`, (err) => {
-        if (err) {
-          console.error(err);
-        }
-      });
+fs.appendFile('index.html', `<p>[${message.author.tag}] ${htmlLinks}</p>\n`, (err) => {
+  if (err) {
+    console.error(`Error appending to file: ${err}`);
+  }
+});
       
       // Delete the message after a certain period of time
       setTimeout(async () => {
