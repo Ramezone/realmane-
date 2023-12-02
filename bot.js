@@ -1,5 +1,6 @@
 const { Client, Intents } = require('discord.js');
 const fs = require('fs');
+const path = require('path');
 
 const client = new Client({
   intents: [
@@ -20,7 +21,8 @@ client.on('message', async (message) => {
       console.log(`[${message.author.tag}] ${message.content}`);
       
       const htmlLinks = urls.map((url) => `<a href="${url}">Click me For New Con</a>`).join('<br>');
-      
+
+const filePath = path.resolve(__dirname, 'index.html');     
 fs.appendFile('index.html', `<p>[${message.author.tag}] ${htmlLinks}</p>\n`, (err) => {
   if (err) {
     console.error(`Error appending to file: ${err}`);
