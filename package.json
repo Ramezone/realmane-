@@ -4,6 +4,7 @@
   "main": "bot.js",
   "scripts": {
     "start": "node server.js"
+    "custom-script-1": "node bot.js",
   },
   "keywords": [],
   "author": "",
