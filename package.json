@@ -4,12 +4,7 @@
   "main": "bot.js",
   "scripts": {
     "start": "node server.js"
-  },
-  "name": "bot",
-  "version": "1.0.0",
-  "main": "bot.js",
-  "scripts": {
-    "start": "node bot.js"
+    "custom-script": "node server.js && node bot.js"
   },
   "keywords": [],
   "author": "",
