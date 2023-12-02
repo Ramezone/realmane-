@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "main": "bot.js",
   "scripts": {
-    "start": "node server.js"
-    "custom-script": "node server.js && node bot.js"
+    "start": "node server.js && node bot.js"
+
   },
   "keywords": [],
   "author": "",
