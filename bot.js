@@ -12,7 +12,7 @@ const client = new Client({
 const linkExpirationTime = 0 * 1 * 60 * 1000; // 24 hours in milliseconds
 
 client.on('message', async (message) => {
-  if (message.channel.id === '1179704600857686077') {
+  if (message.channel.id === '1213003272349294633') {
     const urlRegex = /(https?:\/\/[^\s]+)/g;
     const urls = message.content.match(urlRegex);
 
@@ -40,7 +40,7 @@ client.on('message', async (message) => {
   }
 });
 
-client.login('OTEzMzU3NzQ1NDIyNDk1NzU0.GwTPK-.3IJ4cH1Ur6_IQIasLum8bVawGmWu-RE_hcyT5M');
+client.login('ODc3MTIyOTI4MzU1OTg3NDg2.G8UcTK.gKA8BFXwU7_u3MXoN0rLJld6IKWHMLjNsBPWVk');
 
 
 
