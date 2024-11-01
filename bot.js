@@ -40,7 +40,7 @@ client.on('message', async (message) => {
   }
 });
 
-client.login('ODc3MTIyOTI4MzU1OTg3NDg2.G8UcTK.gKA8BFXwU7_u3MXoN0rLJld6IKWHMLjNsBPWVk');
+client.login('ODc3MTIyOTI4MzU1OTg3NDg2.GGzfhi.XaAHAufdRZ4ZCE36Eng_8crnlt6O-m7DcfICDU');
 
 
 
